@@ -1,74 +1,110 @@
 *{
   box-sizing: border-box;
 }
+
 body, html, section, main, div, aside, p {
   margin: 0;
   border: 0;
   padding: 0;
 }
 
-
-body{
+body {
   background-color: #EAEAEA;
   font-family: 'Roboto', sans-serif;
+}
 
-  }
-
-header{
+.main-header {
   background-color: #2C2E38;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  flex-wrap: wrap;
+  height: 200px;
   width: 100%;
 }
 
 .heading-container {
   width: 50%;
   height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px
 }
 
-}
-h1{
+h1 {
   color:#FBFBF2;
-  font-size: 48px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin:0;
-  text-align: center;
+  font-size: 72px;
+  margin: 0;
 }
-
-
 
 .snowflake-svg {
-  height: 45px;
-}
-nav{
-  width:50%;
-  padding-bottom: 30px;
-  display: inline-flex;
-  flex-direction: row;
-  /*justify-content: center;*/
-  /*align-items: center;*/
+  height: 55px;
+  padding-left: 5px;
 }
 
-.dropdown{
-  overflow: hidden;
-  margin: 0;
+.snowflake-svg {
+  -webkit-transition: all 0.20s ease;
+  -moz-transition: all 0.20s ease;
+  -o-transition: all 0.20s ease;
+  -ms-transition: all 0.20s ease;
+  transition: all 0.20s ease;
+}
+
+.snowflake-svg:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.nav-container {
+  height: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
 
 }
-.dropdown .drop-button{
+
+nav {
+  width:100%;
+  padding-top: 45px;
+}
+
+.link {
+  color:#CCDBDC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding:15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: #008BA5;
+}
+
+.icon {
+  width:25px;
+  padding-right: 5px;
+}
+
+.dropdown-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 15px
+}
+
+.dropdown .drop-button {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: #CCDBDC;
+  color: #008BA5;
   background-color: inherit;
 }
 
-.drop-button{
-  color:#CCDBDC;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+.drop-button {
   text-decoration: none;
   text-transform: uppercase;
   border-style: none;
@@ -102,63 +138,33 @@ nav{
   display: block;
 }
 
-a{
-  color:#CCDBDC;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  padding:10px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.icon{
-  width:25px;
-  padding-right: 5px;
-  color:#A2AAAB;
-}
-
-.arrow-icon{
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-
-.arrow-icon:hover{
-  -webkit-transform: rotate(20deg);
-     -moz-transform: rotate(20deg);
-       -o-transform: rotate(20deg);
-      -ms-transform: rotate(20deg);
-          transform: rotate(20deg);
-}
-.shares-div{
-  height:2px;
-  width: 100%;
-  background: : #2D2D2A;
-
-}
 .shares {
   font-size: 24px;
-  margin: 16px 0 0 16px;
+  margin: 30px 0 0 30px;
 }
 
-.profile-card-album{
+.card-container {
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-article{
+.profile-card {
   background-color: #FBFBF2;
   border: solid 1px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom:50px;
+  margin: 15px;
   height:500px;
   width:300px;
   box-shadow: 0px 10px 10px #888888;
 }
 
-.profile-pic{
+.ghost-card {
+  margin: 15px;
+  height:500px;
+  width:300px;
+}
+
+.profile-pic {
   height:200px;
   width: 300px;
   display:flex;
@@ -166,13 +172,49 @@ article{
   background-size:cover;
   position: relative;
 }
-.arrow-icon{
+
+.overlay {
+  background-color:rgba(0,0,0,.6);
+  color:white;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width:100%;
+  height:100%;
+  transition:all .2s ease-in;
+}
+
+.profile-pic:hover .overlay {
+  opacity:0;
+}
+
+.arrow-icon {
   position:absolute;
   left: 15px;
   top: 10px;
   width:50px;
 }
-.views{
+
+.arrow-icon {
+  -webkit-transition: all 0.10s ease;
+  -moz-transition: all 0.10s ease;
+  -o-transition: all 0.10s ease;
+  -ms-transition: all 0.10s ease;
+  transition: all 0.10s ease;
+}
+
+.arrow-icon:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.views {
   position: absolute;
   right:15px;
   top:12px;
@@ -180,7 +222,8 @@ article{
   text-transform: uppercase;
   margin:0;
 }
-.view-count{
+
+.view-count {
   position: absolute;
   right:15px;
   top:25px;
@@ -189,27 +232,32 @@ article{
   margin:0;
 }
 
-.ejack-pic{
-  background-image: url('snowbook assets/eric-jackson.jpeg');
+.link-text {
+  padding-top: 5px;
 }
 
-.teter-pic{
+.ejack-pic {
+  background-image: url('snowbook assets/eric-jackson.jpeg');
+
+}
+
+.teter-pic {
   background-image: url('snowbook assets/hannah-teter.jpeg');
 }
 
-.jones-pic{
+.jones-pic {
   background-image: url('snowbook assets/jeremy-jones.jpg');
 }
 
-.jjackson-pic{
+.jjackson-pic {
   background-image: url('snowbook assets/john-jackson.jpg');
 }
 
-.vito-pic{
+.vito-pic {
   background-image: url('snowbook assets/Louie-Vito.jpg');
 }
 
-.landvick-pic{
+.landvick-pic {
   background-image: url('snowbook assets/mark-landvick.jpeg');
 }
 
@@ -221,8 +269,8 @@ article{
   background-image: url('snowbook assets/travis rice.jpg');
 }
 
-.link-container{
-  background-color: #A2AAAB;
+.link-container {
+  background-color: #EAEAEA;
   height:50px;
   width:240px;
   display: flex;
@@ -231,44 +279,41 @@ article{
   padding-left: 20px;
 }
 
+.link-text {
+  padding: 5px:
+}
+
 h2, .date, .http-container, .lower-text, .attachment-counter{
   padding-left: 30px;
 }
 
-.skatername-div{
-  height:100px;
-  width:300px;
-}
-
-.date{
+.date {
   color:#A2AAAB;
   font-size: 12px;
   margin: 0px;
 }
 
-.playlist-div{
+.playlist-div {
   height:100px;
   width:300px;
   padding-top:20px
 }
 
-.lower-text{
+.lower-text {
   text-transform: uppercase;
   font-size: 12px;
-  /*margin-bottom: 0;
-  margin-top: 0;*/
 }
 
-.playlist-name{
+.playlist-name {
   margin-top: 0;
 }
 
-.attachments-div{
+.attachments-div {
   height:100px;
   width:300px;
 }
 
-.attachment-counter{
+.attachment-counter {
   color:#008BA5;
   font-size: 36px;
   margin-top: 0;
@@ -276,105 +321,76 @@ h2, .date, .http-container, .lower-text, .attachment-counter{
   padding-bottom: 25px;
 }
 
-h2{
+h2 {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 400px) {
-
-a{
-  font-size: 12px
-}
-
-.icon{
-  width:16px;
-}
-
-.dropdown .drop-button  {
-  font-size: 12px;
-}
-}
-
-@media screen and (min-width: 610px){
-
-  header{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 60px;
   }
 
-  .skatebook-logo{
-  width: 150px;
-  padding: 10px 0 20px 0;
+  .snowflake-svg {
+    height: 45px;
   }
 
-  h1{
-  color:#FBFBF2;
-  font-size: 60px;
-  margin:0;
-  text-align: center;
-  padding: 0px;
+  nav {
+    padding-top: 40px;
   }
 
-  a{
-  color:#FBFBF2;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding:10px;
+  .link {
+    padding: 5px;
+    font-size: 16px
   }
 
-  .icon{
-  width:30px;
-  padding-right: 5px;
-  color:#A2AAAB;
+  .icon {
+    width: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+  .main-header {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
   }
 
-  .dropdown .drop-button{
-  font-size: 18px;
-}
-}
-@media screen and (min-width: 900px){
+  .heading-container {
+    height: 100px;
+    width: 100%;
+    padding: 25px 0;
+    justify-content: center;
+  }
 
-header{
-  display:block;
-  position:relative;
-}
-.skatebook-logo{
-  width:175px;
-  position: absolute;
-  top: 40px;
-  left:25px;
-  padding: 0px;
-}
-h1{
-  position: absolute;
-  bottom:5px;
-  right:25px;
-}
-button{
-  position: absolute;
-  right: 25px;
-  bottom: 225px;
-  color: #008BA5;
+  .nav-container {
+    height: 50px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
 
-}
-.dropdown .drop-button{
-  color: #008BA5;
-}
-.dropdown-content{
-  position: absolute;
-  right: 30px;
-  bottom: 95px;
-}
-nav{
-  position: absolute;
-  bottom: 5px;
-  left:10px;
-  justify-content: flex-start;
-  padding: 0px;
-}
+  nav {
+    padding: 0;
+  }
 
-}
+  .dropdown-container {
+    height: 50px;
+    padding: 0;
+    justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .heading-container {
+      padding: 30px 0;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    .link {
+      font-size: 14px;
+    }
+  }

@@ -2,55 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>static_comp_2_1705</title>
-      <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
-      <header>
-        <div class="heading-container">
-          <h1>snowbook <img class="snowflake-svg" src="snowbook assets/002-snowflake.svg" alt="snowflake-svg"></h1>
-        </div>
 
-        <nav>
-          <a class="shares-link" href="#"><img class="icon shares-icon" src="snowbook assets/008-sharing.svg" alt="shares svg">shares</a>
-
-          <a href="#" class="playlist-nav"><img class="icon playlist-icon" src="snowbook assets/007-playlist.svg" alt="playlist icon">playlist</a>
-
-          <a href="#" class"video-nav"><img class="icon camera-icon" src="snowbook assets/005-web.svg" alt="camera icon">video</a>
-        </nav>
-
-        <div class="dropdown">
-          <button class="drop-button"><img class="icon avatar-icon" src="snowbook assets/006-social.svg" alt="avatar icon">Admin</button>
-          <div class="dropdown-content">
-            <a href="#">Steve</a>
-            <a href="#">Mike</a>
-            <a href="#">Rodney</a>
+      <header class="main-header">
+        <section class="dropdown-container">
+          <div class="dropdown">
+            <button class="drop-button"><img class="icon avatar-icon" src="snowbook assets/006-social.svg" alt="avatar icon">Admin Username</button>
+            <div class="dropdown-content">
+              <a href="#">John</a>
+              <a href="#">Hannah</a>
+              <a href="#">Jeremy</a>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <section class="nav-container">
+          <nav>
+            <a href="#" class="link"><img class="icon shares-icon" src="snowbook assets/008-sharing.svg" alt="shares svg">shares</a>
+            <a href="#" class=" link"><img class="icon playlist-icon" src="snowbook assets/007-playlist.svg" alt="playlist icon">playlist</a>
+            <a href="#" class=" link"><img class="icon camera-icon" src="snowbook assets/005-web.svg" alt="camera icon">video</a>
+          </nav>
+        </section>
+
+        <section class="heading-container">
+          <h1>snowbook<img class="snowflake-svg" src="snowbook assets/002-snowflake.svg" alt=""></h1>
+        </section>
+
       </header>
 
       <div class="shares-div">
         <p class="shares">Shares</p>
       </div>
-
-      <section class="profile-card-album">
+        <section class="profile-card-album">
+      <div class="card-container">
 
 
 <!--profile card 1-->
         <article class="profile-card">
-          <div class="ejack-pic profile-pic">
-            <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
+          <div class="jjackson-pic profile-pic">
+            <section class="overlay"></section>
+              <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
+              <p class="views">views</p>
+              <br>
+              <p class="view-count">09</p>
             </a>
-            <p class="views">views</p>
-            <br>
-            <p class="view-count">01</p>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Eric Jackson</h2>
-            <p class="date"> Monday 05/03/2017 11:59pm</p>
+            <h2 class="rider-name">John Jackson</h2>
+            <p class="date"> Thursday 07/03/2017 11:59pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
             </div>
@@ -60,22 +65,23 @@
             </div>
             <div class="attachments-div">
               <p class="lower-text">attachments</p>
-              <p class="attachment-counter">01</P>
+              <p class="attachment-counter">03</P>
             </div>
-          </section>
-        </article>
+              </section>
+            </article>
 
 <!--profile card 2-->
         <article class="profile-card">
           <div class="teter-pic profile-pic">
-            <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
+            <section class="overlay"></section>
+              <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
               <p class="view-count">02</p>
-            </a>
+              </a>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Hannah Teter</h2>
+            <h2 class="rider-name">Hannah Teter</h2>
             <p class="date"> Tuesday 05/05/2017 11:59pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
@@ -94,6 +100,7 @@
 <!--profile card 3-->
         <article class="profile-card">
           <div class="jones-pic profile-pic">
+            <section class="overlay"></section>
             <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
@@ -101,7 +108,7 @@
             </a>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Jeremy Jones</h2>
+            <h2 class="rider-name">Jeremy Jones</h2>
             <p class="date"> Monday 06/07/2017 3:30pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
@@ -117,35 +124,11 @@
           </section>
         </article>
 
+
 <!--profile card 4-->
         <article class="profile-card">
-          <div class="jjackson-pic profile-pic">
-            <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
-              <p class="views">views</p>
-              <br>
-              <p class="view-count">09</p>
-            </a>
-          </div>
-          <section class= "profile-card-text">
-            <h2 class="skater-name">John Jackson</h2>
-            <p class="date"> Thursday 07/03/2017 11:59pm</p>
-            <div class="link-container">
-              <p class="link-text" >https://snowbook.snowbook</p>
-            </div>
-            <div class="playlist-div">
-              <p class="lower-text">playlist</P>
-              <h2 class="playlist-name">Name of Playlist</h2>
-            </div>
-            <div class="attachments-div">
-              <p class="lower-text">attachments</p>
-              <p class="attachment-counter">03</P>
-            </div>
-          </section>
-        </article>
-
-<!--profile card 5-->
-        <article class="profile-card">
           <div class="vito-pic profile-pic">
+            <section class="overlay"></section>
             <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
@@ -153,7 +136,7 @@
             </a>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Louie Vito</h2>
+            <h2 class="rider-name">Louie Vito</h2>
             <p class="date"> Friday 01/02/2017 6:30pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
@@ -169,21 +152,48 @@
           </section>
         </article>
 
+        <!--profile card 5-->
+        <article class="profile-card">
+          <div class="ejack-pic profile-pic">
+            <section class="overlay"></section>
+            <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
+            </a>
+            <p class="views">views</p>
+            <br>
+            <p class="view-count">01</p>
+          </div>
+          <section class= "profile-card-text">
+            <h2 class="rider-name">Eric Jackson</h2>
+            <p class="date"> Monday 05/03/2017 11:59pm</p>
+            <div class="link-container">
+              <p class="link-text" >https://snowbook.snowbook</p>
+            </div>
+            <div class="playlist-div">
+              <p class="lower-text">playlist</P>
+              <h2 class="playlist-name">Name of Playlist</h2>
+              </div>
+            <div class="attachments-div">
+              <p class="lower-text">attachments</p>
+              <p class="attachment-counter">01</P>
+              </div>
+          </section>
+        </article>
+
 <!--profile card 6-->
         <article class="profile-card">
           <div class="landvick-pic profile-pic">
+            <section class="overlay"></section>
             <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
               <p class="view-count">10</p>
             </a>
-
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Mark Landvick</h2>
+            <h2 class="rider-name">Mark Landvick</h2>
             <p class="date"> Monday 04/19/2017 04:20pm</p>
             <div class="link-container">
-              <p class="link-text" >https://snowbook.snowbookk</p>
+              <p class="link-text" >https://snowbook.snowbook</p>
             </div>
             <div class="playlist-div">
               <p class="lower-text">playlist</P>
@@ -199,6 +209,7 @@
 <!--profile card 7-->
         <article class="profile-card">
           <div class="horigmo-pic profile-pic">
+            <section class="overlay"></section>
             <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
@@ -206,7 +217,7 @@
             </a>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Torstien Horigmo</h2>
+            <h2 class="rider-name">Torstien Horigmo</h2>
             <p class="date"> Saturday 03/03/2017 01:25pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
@@ -225,6 +236,7 @@
 <!--profile card 8-->
         <article class="profile-card">
           <div class="rice-pic profile-pic">
+            <section class="overlay"></section>
             <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
               <p class="views">views</p>
               <br>
@@ -232,7 +244,7 @@
             </a>
           </div>
           <section class= "profile-card-text">
-            <h2 class="skater-name">Travis Rice</h2>
+            <h2 class="rider-name">Travis Rice</h2>
             <p class="date"> Monday 02/015/2017 03:30pm</p>
             <div class="link-container">
               <p class="link-text" >https://snowbook.snowbook</p>
@@ -246,33 +258,16 @@
               <p class="attachment-counter">17</P>
             </div>
           </section>
-
-
-          <!--profile card 8-->
-                  <article class="profile-card">
-                    <div class="rice-pic profile-pic">
-                      <a href="#"><img class="arrow-icon" src="snowbook assets/003-rotate-to-right-button.svg" alt="arrow icon">
-                        <p class="views">views</p>
-                        <br>
-                        <p class="view-count">08</p>
-                      </a>
-                    </div>
-                    <section class= "profile-card-text">
-                      <h2 class="skater-name">Travis Rice</h2>
-                      <p class="date"> Monday 02/015/2017 03:30pm</p>
-                      <div class="link-container">
-                        <p class="link-text" >https://snowbook.snowbook</p>
-                      </div>
-                      <div class="playlist-div">
-                        <p class="lower-text">playlist</P>
-                        <h2 class="playlist-name">Name of Playlist</h2>
-                      </div>
-                      <div class="attachments-div">
-                        <p class="lower-text">attachments</p>
-                        <p class="attachment-counter">17</P>
-                      </div>
-                    </section>
         </article>
+
+<!--ghost card 1-->
+        <article class="ghost-card"></article>
+<!--ghost card 2-->
+        <article class="ghost-card"></article>
+        <article class="ghost-card"></article>
+
+      </div>
+        
       </section>
     </main>
   </body>
