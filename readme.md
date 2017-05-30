@@ -7,4 +7,4 @@ The second static comp of this module is that of a "card-style" layout.  The des
 
 
 ### Reproduction
-![Reproduction Comp]snowbook assets/Screen Shot 2017-05-28 at 8.58.52 PM.png
+![Reproduction Comp]https://github.com/rburnette3/RB-1705-static-comp-challenge-2/blob/master/snowbook%20assets/Screen%20Shot%202017-05-28%20at%208.58.52%20PM.png
